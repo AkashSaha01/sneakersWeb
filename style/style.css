@@ -110,9 +110,41 @@
 }
 .hero-right {
   padding-left: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  gap: 0px;
 }
 #hero-right-company {
   font-family: kanit, sans-serif;
   color: grey;
+  margin-top: 0px;
+}
+#hero-headline {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-top: -2px;
+}
+#hero-paragraph {
+  margin-top: -10px;
+  color: #58595c;
+}
+.current-price {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.current-price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.offer {
+  background-color: black;
+  color: white;
+  padding: 0px 12px;
+  border-radius: 10px;
+}
+#previous-price {
+  color: #58595c;
+  font-size: 1.25rem;
+  margin-top: -10px;
 }
