@@ -106,7 +106,7 @@
 
 .thumbnail:hover,
 .thumbnail.active {
-  border: 2px solid #007bff;
+  border: 3px solid #eabe76;
 }
 .hero-right {
   padding-left: 10px;
@@ -147,4 +147,40 @@
   color: #58595c;
   font-size: 1.25rem;
   margin-top: -10px;
+}
+.sign {
+  font-weight: bold;
+  color: #d65002;
+}
+
+.hero-right-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.bottom-left {
+  background-color: #c0c1c7;
+  padding: 0px 15px;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  align-items: center;
+  height: 50px;
+}
+
+.bottom-left p {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  padding: 0px 5px;
+}
+
+.bootom-right {
+  background-color: #eca83b;
+  border-radius: 10px;
+  padding: 0px 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }

@@ -105,12 +105,10 @@
             const mainImage = document.getElementById("mainImage");
             mainImage.src = thumbnail.src;
 
-            // Remove active class from all thumbnails
             document
               .querySelectorAll(".thumbnail")
               .forEach((img) => img.classList.remove("active"));
 
-            // Add active class to clicked thumbnail
             thumbnail.classList.add("active");
           }
         </script>
@@ -130,6 +128,16 @@
           <p class="offer">50%</p>
         </div>
         <p id="previous-price"><del>$250</del></p>
+        <div class="hero-right-bottom">
+          <div class="bottom-left">
+            <p class="sign">-</p>
+            <p>0</p>
+            <p class="sign">+</p>
+          </div>
+          <div class="bootom-right">
+            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+          </div>
+        </div>
       </div>
     </div>
   </body>
