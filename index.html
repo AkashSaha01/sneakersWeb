@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
@@ -57,5 +63,74 @@
         </div>
       </div>
     </header>
+    <br />
+    <!--Hero Section Start-->
+
+    <div class="hero-section">
+      <div class="hero-left">
+        <div class="gallery">
+          <img
+            id="mainImage"
+            class="main-image"
+            src="./images/main_hero.jpg"
+            alt="Main Product Image"
+          />
+
+          <div class="thumbnail-container">
+            <img
+              class="thumbnail active"
+              src="./images/main_hero.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              class="thumbnail"
+              src="./images/part1.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              class="thumbnail"
+              src="./images/part2.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              class="thumbnail"
+              src="./images/part3.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <script>
+          function changeImage(thumbnail) {
+            const mainImage = document.getElementById("mainImage");
+            mainImage.src = thumbnail.src;
+
+            // Remove active class from all thumbnails
+            document
+              .querySelectorAll(".thumbnail")
+              .forEach((img) => img.classList.remove("active"));
+
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add("active");
+          }
+        </script>
+      </div>
+      <div class="hero-right">
+        <h3 id="hero-right-company">SNEAKERS COMPANY</h3>
+        <h3>Fall Limited Edition Sneakers</h3>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer
+        </p>
+        <div class="current-price">
+          <div>
+            <h3>$250</h3>
+          </div>
+          <div class="offer">50%</div>
+        </div>
+        <h4><del>$250</del></h4>
+      </div>
+    </div>
   </body>
 </html>
